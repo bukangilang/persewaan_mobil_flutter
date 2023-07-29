@@ -53,8 +53,6 @@ class DetailMobil extends StatelessWidget {
         required this.brand,
         required this.path});
 
-  var itemCount = null;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,11 +61,6 @@ class DetailMobil extends StatelessWidget {
         title: Text("Go Rent"),
         centerTitle: true,
         actions: [
-          IconButton(
-              onPressed:() {},
-              icon: Icon(Icons.shopping_cart)
-          ),
-          if (itemCount > 0)
             Positioned(
                 right: 0,
                 child: Container(
@@ -75,13 +68,6 @@ class DetailMobil extends StatelessWidget {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.red,
-                ),
-                child: Text(
-                  itemCount.toString(),
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
                 ),
             )
         )
@@ -155,7 +141,6 @@ class DetailMobil extends StatelessWidget {
                 onPressed: (){
                   _showSimpleDialog(context);
                   setState(() {
-                    itemCount++;
                   });
                 },
                 child: Text(

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 //import 'package:indocars/MyProfil.dart';
 import 'MyProfil.dart';
 import 'Tampilan_mobil.dart';
+import 'home.dart';
+// import 'package:http/http.dart' as http;
 
 void main() {
   runApp(
@@ -13,6 +15,7 @@ void main() {
         '/page1' : (BuildContext context) => new Home(),
         '/page2' : (BuildContext context) => new MyProfil(),
         '/page3' : (BuildContext context) => new Tampilanmobil(),
+        '/page4' : (BuildContext context) => new MyApp(),
       },
     ),
   );
@@ -27,6 +30,12 @@ class Home extends StatelessWidget {
         title: new Text('Go Rent'),
         centerTitle: true,
         backgroundColor: Colors.blue,
+        leading: IconButton(
+          icon: Icon(Icons.person_outline),
+          onPressed: () {
+            Navigator.pushNamed(context, '/page4');
+          },
+        ),
         actions: <Widget>[
           new IconButton(
               icon: Icon(Icons.person_outline),
@@ -43,7 +52,7 @@ class Home extends StatelessWidget {
             new Container(
               // width: 50,
               child: Image.asset('images/go_rent.jpg',
-                  fit: BoxFit.fill,
+                fit: BoxFit.fill,
                 height: 250.0,
                 width: 300.0,
               ),
@@ -81,5 +90,7 @@ class Home extends StatelessWidget {
     );
   }
 }
+
+
 
 

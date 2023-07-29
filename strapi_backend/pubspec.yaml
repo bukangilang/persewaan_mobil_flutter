@@ -1,4 +1,4 @@
-name: persewaan_mobil
+name: strapi_backend
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: '>=3.1.0-163.1.beta <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -59,15 +59,6 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  assets:
-  - assets/images/go_rent.jpg
-  - assets/images/all_new_avanza.jpg
-  - assets/images/civic.jpg
-  - assets/images/Gilang.jpg
-  - assets/images/go_rent.jpg
-  - assets/images/innova_reborn.jpg
-  - assets/images/innova_kapsul.jpg
-  - assets/images/mobilio.jpg
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
